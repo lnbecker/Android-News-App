@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageDialogView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_app_background" />
+
+    <TextView
+        android:id="@+id/titleDialogView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageDialogView"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="8dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/titleDialogView"
+        android:divider="@drawable/mydivider"
+        android:showDividers="middle"
+        android:stretchColumns="*">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/holo_purple" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/mydivider"
+            android:showDividers="middle">
+
+
+
+            <ImageButton
+                android:id="@+id/twitterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:background="@color/cardview_light_background"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@mipmap/ic_twitter_icon" />
+
+            <ImageButton
+                android:id="@+id/bookmarkButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="@color/cardview_light_background"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:tint="@android:color/holo_orange_dark"
+                app:srcCompat="@drawable/ic_bookmark_border" />
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+</RelativeLayout>
